@@ -2,6 +2,8 @@
 
 Inteligentný, automatizovaný ekosystém pre prácu s informáciami a obsahom.
 
+![Architekt kúziel Logo](https://via.placeholder.com/150)
+
 ## Popis
 
 Aplikácia "Architekt kúziel" je plne funkčný inteligentný ekosystém pre prácu s informáciami a obsahom, ktorý zahŕňa:
@@ -20,15 +22,84 @@ Aplikácia je implementovaná pomocou moderných technológií:
 - Databáza: PostgreSQL
 - AI: Integrácia s OpenAI API a Groq AI API
 
+## Architektúra systému
+
+Aplikácia je postavená na modernej mikroslužbovej architektúre s jasným oddelením frontendu a backendu:
+
++----------------------------------+
+| Frontend |
+| (Next.js, React, Redux, UI) |
++----------------------------------+
+|
+| HTTP/WebSocket
+|
++----------------------------------+
+| Backend |
+| (Node.js, Express, GraphQL) |
++----------------------------------+
+|
+| ORM
+|
++----------------------------------+
+| Databáza |
+| (PostgreSQL) |
++----------------------------------+
+|
+| API
+|
++----------------------------------+
+| Externé služby |
+| (OpenAI API, Groq API, atď.) |
++----------------------------------+
+
+## Požiadavky
+
+- Node.js (v16+)
+- npm (v8+) alebo yarn (v1.22+)
+- PostgreSQL (v13+)
+- Git
+
 ## Inštalácia
 
-Podrobné inštrukcie pre inštaláciu nájdete v súbore [LOCAL_INSTALLATION.md](LOCAL_INSTALLATION.md).
+Podrobné inštrukcie pre inštaláciu nájdete v súbore [LOCAL_INSTALLATION.md](docs/LOCAL_INSTALLATION.md).
 
-## Dokumentácia
+### Rýchly štart
 
-- [Dokumentácia pre vývojárov](docs/DEVELOPER_DOCUMENTATION.md)
-- [Používateľská príručka](docs/USER_DOCUMENTATION.md)
+```bash
+# Klonovanie repozitára
+git clone https://github.com/your-username/architekt-kuziel.git
+cd architekt-kuziel
 
-## Licencia
+# Inštalácia závislostí
+npm install
 
-Tento projekt je licencovaný pod [MIT licenciou](LICENSE).
+# Inštalácia frontend závislostí
+cd src/frontend
+npm install
+cd ../..
+
+# Inštalácia backend závislostí
+cd src/backend
+npm install
+cd ../..
+
+# Spustenie vývojových serverov
+# V jednom termináli (backend)
+cd src/backend
+npm run dev
+
+# V druhom termináli (frontend)
+cd src/frontend
+npm run dev
+
+
+Tento README.md súbor poskytuje komplexný prehľad o vašom projekte, jeho funkciách, architektúre, technológiách a inštalačnom procese. Obsahuje tiež sekcie pre roadmap, prispievanie a kontaktné informácie.
+
+Pred použitím nezabudnite:
+1. Nahradiť placeholder pre logo skutočným logom projektu (ak ho máte)
+2. Aktualizovať GitHub URL adresy vašim skutočným používateľským menom
+3. Doplniť vaše kontaktné informácie
+4. Upraviť roadmap podľa aktuálneho stavu projektu
+
+Chcete, aby som upravil niektorú časť tohto README súboru?
+
