@@ -2,7 +2,7 @@
 
 Inteligentný, automatizovaný ekosystém pre prácu s informáciami a obsahom.
 
-![Architekt kúziel Logo](https://via.placeholder.com/150)
+![Architekt kúziel Logo](assets/architekt-kuziel-logo-001.png)
 
 ## Popis
 
